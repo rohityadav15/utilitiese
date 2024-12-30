@@ -60,7 +60,8 @@ function App() {
             width: "215vh",
             height:"90vh",
             margin:"1%",
-            borderRadius:"1%",
+            borderRadius:"2%",
+            backgroundColor: "lightblue",
             boxShadow: "0px 4px 10px rgba(2, 2, 2, 2)",
           }}
         >

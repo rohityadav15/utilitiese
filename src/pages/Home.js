@@ -9,8 +9,11 @@ const Home = () => {
         alignItems: "center",
         flexDirection: "column",
         justifyContent: "center",
-        height: "90%",
-        width: "90%",
+        height: "100%",
+        backgroundColor: "lightblue",
+        width: "100%",
+        borderRadius: "2%",
+        boxShadow: "0px 4px 10px rgba(2, 2, 2, 2)",
       }}
     >
       <Box
@@ -30,46 +33,49 @@ const Home = () => {
             height: "100%",
             width: "30%",
             display: "flex",
-            textDecoration:"none",
+            textDecoration: "none",
             alignItems: "center",
             justifyContent: "center",
-            borderRadius: "2%",
+            borderRadius: "4%",
+            backgroundColor: "#ffff",
             boxShadow: "0px 4px 10px rgba(2, 2, 2, 2)",
           }}
         >
           <Box>Todo</Box>
         </Link>
         <Link
-        to="/convetInSentence"
+          to="/convetInSentence"
           style={{
             height: "100%",
             width: "30%",
             display: "flex",
             alignItems: "center",
-            textDecoration:"none",
+            textDecoration: "none",
             justifyContent: "center",
-            borderRadius: "2%",
+            borderRadius: "4%",
+            backgroundColor: "#ffff",
             boxShadow: "0px 4px 10px rgba(2, 2, 2, 2)",
           }}
         >
           <Box>convert in sentence</Box>
         </Link>
         <Link
-        to="/factorial"
+          to="/factorial"
           style={{
             height: "100%",
             width: "30%",
             display: "flex",
             alignItems: "center",
-            textDecoration:"none",
+            textDecoration: "none",
             justifyContent: "center",
-            borderRadius: "2%",
+            borderRadius: "4%",
+            backgroundColor: "#ffff",
             boxShadow: "0px 4px 10px rgba(2, 2, 2, 2)",
           }}
         >
           <Box>Factorial</Box>
         </Link>
-        </Box>
+      </Box>
       <Box
         style={{
           display: "flex",
@@ -82,45 +88,48 @@ const Home = () => {
         }}
       >
         <Link
-        to="/ageCalculator"
+          to="/ageCalculator"
           style={{
             height: "100%",
             width: "30%",
-            textDecoration:"none",
+            textDecoration: "none",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            borderRadius: "2%",
+            borderRadius: "4%",
+            backgroundColor: "#ffff",
             boxShadow: "0px 4px 10px rgba(2, 2, 2, 2)",
           }}
         >
           <Box>Age calcultor</Box>
         </Link>
         <Link
-        to="/unitConversion"
+          to="/unitConversion"
           style={{
             height: "100%",
             width: "30%",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            borderRadius: "2%",
-            textDecoration:"none",
+            borderRadius: "4%",
+            backgroundColor: "#ffff",
+            textDecoration: "none",
             boxShadow: "0px 4px 10px rgba(2, 2, 2, 2)",
           }}
         >
           <Box>Unit Conversion</Box>
         </Link>
         <Link
-        to="/numberToWord"
+          to="/numberToWord"
           style={{
             height: "100%",
-            textDecoration:"none",
+            textDecoration: "none",
             width: "30%",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            borderRadius: "2%",
+            borderRadius: "4%",
+            backgroundColor: "#ffff",
             boxShadow: "0px 4px 10px rgba(2, 2, 2, 2)",
           }}
         >
