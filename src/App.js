@@ -6,6 +6,7 @@ import Factorial from "./pages/Factorial";
 import AgeCalculator from "./pages/AgeCalculator";
 import UnitConversion from "./pages/UnitConversion";
 import NumberToWord from "./pages/NumberToWord";
+import Login from "./pages/Login";
 
 function App() {
   return (
@@ -50,6 +51,12 @@ function App() {
             >
               Number To word
             </Link>
+            <Link
+              to="/logIn"
+              style={{ color: "white", textDecoration: "none" }}
+            >
+              Login
+            </Link>
           </nav>
         </Box>
         <Box
@@ -72,6 +79,7 @@ function App() {
             <Route path="/ageCalculator" element={<AgeCalculator />} />
             <Route path="/unitConversion" element={<UnitConversion />} />
             <Route path="/numberToWord" element={<NumberToWord />} />
+            <Route path="/logIn" element={<Login/>} />
           </Routes>
         </Box>
       </Router>
