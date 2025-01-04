@@ -11,6 +11,8 @@ import {
   TextField,
 } from "@mui/material";
 import { useState } from "react";
+import DeleteIcon from "@mui/icons-material/Delete";
+import { BorderColor } from "@mui/icons-material";
 
 const Todo = () => {
   const [name, setName] = useState("");
@@ -135,7 +137,7 @@ const Todo = () => {
           <Table>
             <TableHead style={{ backgroundColor: "pink" }}>
               <TableRow>
-                <TableCell align="center">Sr.</TableCell>
+                <TableCell align="center">Sr. No.</TableCell>
                 <TableCell align="center">Name</TableCell>
                 <TableCell align="center">Action</TableCell>
               </TableRow>
@@ -145,11 +147,13 @@ const Todo = () => {
                 <TableRow>
                   <TableCell align="center">{student.id}</TableCell>
                   <TableCell align="center">{student.name}</TableCell>
-                  <TableCell align="center">
-                    <Button onClick={() => handleDelete(student.id)}>
-                      Delete
+                  <TableCell align="center" >
+                    <Button >
+                      {<DeleteIcon onClick={() => handleDelete(student.id)} margin={10}/>}
                     </Button>
-                    <Button onClick={() => handleEdit(student.id)}>edit</Button>
+                    <Button >
+                      {<BorderColor  onClick={() => handleEdit(student.id)}/>}
+                    </Button>
                   </TableCell>
                 </TableRow>
               ))}
