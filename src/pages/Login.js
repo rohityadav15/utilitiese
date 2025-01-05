@@ -20,7 +20,7 @@ const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [confirmPassword, setConfirmPassword] = useState(false);
 
-  const handleShowPassword = () => {
+  const handleShowPassword = (e) => {
     setShowPassword((prev) => !prev);
   };
 
@@ -40,11 +40,12 @@ const Login = () => {
   };
 
   const handleLogin = () => {
+    const savedUser = JSON.parse(localStorage.getItem("user"));
     if (email === "" || password === "" || confirm === "") {
       alert("All field must be required");
     } else {
       if (password === confirm && password.length >= 5) {
-        if (email === SAVED_EMAIL && password === SAVED_PASSWORD) {
+        if (email === savedUser.email && password === savedUser.password) {
           alert("You have logedin");
         } else {
           alert("Your email and password not matched");
