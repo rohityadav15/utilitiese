@@ -40,7 +40,9 @@ const Login = () => {
   };
 
   const handleLogin = () => {
-    const savedUser = JSON.parse(localStorage.getItem("user"));
+    const savedUserData = localStorage.getItem("user");
+
+    const savedUser = JSON.parse(savedUserData);
     if (email === "" || password === "" || confirm === "") {
       alert("All field must be required");
     } else {
