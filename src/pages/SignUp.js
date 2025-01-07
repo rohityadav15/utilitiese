@@ -61,7 +61,8 @@ const SignUp = () => {
             password,
             confirmPassword,
           };
-          localStorage.setItem("user", JSON.stringify(personData));
+          const user = JSON.stringify(personData);
+          localStorage.setItem("user", user);
 
           alert("You have signup successfully");
         } else {
