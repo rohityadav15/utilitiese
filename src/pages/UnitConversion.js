@@ -2,9 +2,24 @@ import { Box, MenuItem, Select } from "@mui/material";
 
 const UnitConversion = () => {
   return (
-    <Box>
+    <Box
+    style={{
+      display: "flex",
+      flexDirection: "column",
+      height: "50%",
+      width: "50%",
+      backgroundColor: "#ffff",
+    }}>
       Conversion
-      <Box>
+      <Box
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          height: "50%",
+          width: "50%",
+          backgroundColor: "#ffff",
+        }}
+      >
         <Box>
           <Select
             labelId="unit-select-label"
@@ -18,7 +33,7 @@ const UnitConversion = () => {
             <MenuItem value="inch">inch</MenuItem>
           </Select>
         </Box>
-        <box>
+        <Box>
           <Select
             labelId="unit-select-label"
             id="unit-select"
@@ -30,7 +45,7 @@ const UnitConversion = () => {
             <MenuItem value="meter">meter</MenuItem>
             <MenuItem value="inch">inch</MenuItem>
           </Select>
-        </box>
+        </Box>
       </Box>
     </Box>
   );
